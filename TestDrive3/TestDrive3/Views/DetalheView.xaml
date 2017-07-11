@@ -18,7 +18,8 @@
         </TableView>
         <Button 
             Text="Proximo" 
-            VerticalOptions="End" />
+            VerticalOptions="End" 
+            Command="{Binding ProximoCommand}"/>
     </StackLayout>
     
 </ContentPage>

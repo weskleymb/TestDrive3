@@ -38,9 +38,16 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Agendamento.cs" />
     <Compile Include="Models\ListagemVeiculos.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Models\Veiculo.cs" />
+    <Compile Include="ViewModels\AgendamentoViewModel.cs" />
+    <Compile Include="ViewModels\DetalheViewModel.cs" />
     <Compile Include="ViewModels\ListagemViewModel.cs" />
+    <Compile Include="Views\AgendamentoView.xaml.cs">
+      <DependentUpon>AgendamentoView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\DetalheView.xaml.cs">
       <DependentUpon>DetalheView.xaml</DependentUpon>
     </Compile>
@@ -75,6 +82,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\DetalheView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\AgendamentoView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

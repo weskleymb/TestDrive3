@@ -19,10 +19,10 @@ namespace TestDrive3.Views
         {
             base.OnAppearing();
             MessagingCenter.Subscribe<Veiculo>(this, "VeiculoSelecionado", 
-                (veiculo) =>
-                {
-                    Navigation.PushAsync(new DetalheView(veiculo));
-                });
+            (veiculo) =>
+            {
+                Navigation.PushAsync(new DetalheView(veiculo));
+            });
         }
 
         protected override void OnDisappearing()
